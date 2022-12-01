@@ -5,6 +5,7 @@ A website designed to show some of my work and what I have learned show far in w
 The website includes a Homepage, about me section, my work section, and a contact me page.
 
 ## Website
+This is the deployed website
 https://jaredlove.github.io/React-Portfolio/
 
 ## Contribution

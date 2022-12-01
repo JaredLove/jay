@@ -40,9 +40,11 @@ function Resume() {
     <li>
         <i class="fa-solid fa-check"></i> Mongoose
     </li>
+    
     <li>
         <i class="fa-solid fa-check"></i> MongoDB
     </li>
+
 </ul>
           </section>
     </body>
