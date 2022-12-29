@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../Nav';
+
 
 
 function Resume() {
@@ -7,8 +7,8 @@ function Resume() {
 
 
   return (
-    <body>
-      <><Sidebar></Sidebar></>
+    <div className='resume'>
+
      <h1>Download My <a href="/resume">Resume</a></h1> 
 
      <section>
@@ -47,7 +47,7 @@ function Resume() {
 
 </ul>
           </section>
-    </body>
+    </div>
   );
 }
 

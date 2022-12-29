@@ -35,9 +35,12 @@ main {
 }
 
 html,
-body {
+body,
+main {
   overflow-x: hidden;
-  background: var(--navy);
+  /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("./assets/images/fold.jpg");  blur img*/ 
+  background-image: url("./assets/images/fold.jpg");
+  background-size: cover;
 }
 
 body {
@@ -48,15 +51,11 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--navy);
   color: var(--slate);
- 
   font-family: 'Poiret One', cursive;
 }
 
-main {
-  background: var(--navy);
-}
+
 
 h1,
 h2,
@@ -99,74 +98,26 @@ p {
   margin-top: 0;
 }
 
-a {
-  color: var(--tertiary);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header {
-  background: var(--dark);
-}
-
-header a {
-  color: var(--light);
-}
-
 button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
+  background: var(--primary);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 button:hover {
   opacity: 0.8;
 }
 
-button[disabled] {
-  cursor: default;
-  opacity: 0.8;
-}
-
-.footer-btn {
-  margin: 90px;
-}
-
-figcaption {
-  position: absolute;
-  bottom: 2rem;
-}
-
 .home {
   position: absolute;
   top: 200px;
   left: 200px;
-}
-
-
-
-
-
-img {
-  max-width: 100%;
-}
-
-span[role='img'] {
-  cursor: default;
-}
-
-form {
-  width: 40%;
 }
 
 input {
@@ -183,14 +134,6 @@ input:focus {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-li {
-  list-style: none;
-}
-
-
-
-
-
 textarea {
   width: 600px;
   height: 120px;
@@ -205,123 +148,91 @@ textarea {
   margin-right: auto;
 }
 
-.flex-row {
+  .myImg {
+    position: absolute;
+    right: 750px;
+    top: 300px;
+  }
+
+ .aboutMe {
+  position: absolute;
+  width: 30%;
+  left: 200px;
+  top: 250px;
+
+ }
+ .workHead {
+  position: absolute;
+  left: 900px;
+ }
+
+ .workdiv {
+  top: 100px;
+  
+ }
+
+ .workdiv a {
+  color: #8c54ff;
+ }
+
+.work {
+  position: absolute;
+  left: 200px;
+  top: 60px;
+  text-decoration: none;
+}
+.workUl {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  
+  
 }
 
-.space-between {
-  justify-content: space-between;
+.workUl li {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(66, 59, 59, 0.5);
+  width: 1500px;
+  height: 100px;
 }
 
-.flex-end {
-  justify-content: flex-end;
+.resume {
+  position: absolute;
+  left: 200px;
+  top: 200px;
 }
 
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
+
+#contact-form {
+  width: 20%;
+  position: absolute;
+  left: 500px;
+  top: 300px;
 }
 
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
+.contactMe {
+  position: absolute;
+  left: 500px;
 }
 
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
 
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
 
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
 
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
 
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
 
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
 
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
 
-.card {
-  width: 25%;
-  text-align: center;
-}
 
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
 
-.modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
+   @media screen and (max-width: 1200px) {
 
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-button {
-  background: var(--primary);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-}
-
-a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.navActive {
-  color: var(--secondary);
-}
+    
+html,
+  body,
+  main{
+        height: 670px;
+        background-repeat: no-repeat;
+        background-position: center;
+  }
+   }

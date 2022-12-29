@@ -5,14 +5,15 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import { Route, Routes } from "react-router-dom";
+import Nav from './components/Nav';
 
 function App() {
 
   return (
-    <div>
-    
+    <div className='appDiv'>
+    <header><><Nav></Nav></></header>
      
-      <main> 
+  
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,7 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
-      </main>
+    
     </div>
   );
 }
