@@ -205,15 +205,29 @@ textarea {
 
 
 #contact-form {
-  width: 20%;
+  width: 10%;
   position: absolute;
-  left: 500px;
+  left: 700px;
   top: 300px;
+}
+
+.message {
+  width: 500px;
+  height: 150px;
 }
 
 .contactMe {
   position: absolute;
-  left: 500px;
+  left: 820px;
+  top: 200px;
+}
+
+.name {
+  width: 500px;
+}
+
+.email {
+  width: 500px;
 }
 
 

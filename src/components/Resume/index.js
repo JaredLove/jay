@@ -14,36 +14,46 @@ function Resume() {
      <section>
           <h2>Here are some technologies I've worked with</h2>
 
-<ul class="skill">
+<ul className="skill">
     <li>
         
-        <i class="fa-solid fa-check"></i> HTML
+        <i className="fa-solid fa-check"></i> HTML
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> CSS-Bootstrap-Bulma
+        <i className="fa-solid fa-check"></i> CSS-Bootstrap-Bulma
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> Javascript
+        <i className="fa-solid fa-check"></i> Javascript
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> Node.js
+        <i className="fa-solid fa-check"></i> Node.js
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> Express.js
+        <i className="fa-solid fa-check"></i> Express.js
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> Mysql
+        <i className="fa-solid fa-check"></i> Mysql
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> React
+        <i className="fa-solid fa-check"></i> React
     </li>
     <li>
-        <i class="fa-solid fa-check"></i> Mongoose
+        <i className="fa-solid fa-check"></i> Mongoose
     </li>
     
     <li>
-        <i class="fa-solid fa-check"></i> MongoDB
+        <i className="fa-solid fa-check"></i> MongoDB
     </li>
+    <li>
+        <i className="fa-solid fa-check"></i> SQL
+    </li>
+    <li>
+        <i className="fa-solid fa-check"></i> Apollo
+    </li>
+    <li>
+        <i className="fa-solid fa-check"></i> State
+    </li>
+
 
 </ul>
           </section>
