@@ -9,7 +9,7 @@ function Resume() {
   return (
     <div className='resume'>
 
-     <h1>Download My <a href="/resume">Resume</a></h1> 
+     <h1>Take a look at my <a href="https://docs.google.com/document/d/17J7e-47XY25hDmlJsdg8uso_YAwcqxTL8uDUWnMpqb4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
 
      <section>
           <h2>Here are some technologies I've worked with</h2>
