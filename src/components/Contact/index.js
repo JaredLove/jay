@@ -41,9 +41,12 @@ function ContactForm() {
   return (
     <section>
       <h1 className='contactMe'>Contact Me</h1>
+      <h2 className='touch'>Get In Touch</h2>
+      <p className='contactP'>I'm always looking for any new opportunities. Best way to contact me is through email, whether you just want to say hi or need something from me, 
+        I'll try my best to get back to you.</p>
       <form id='contact-form' action="https://formsubmit.co/lovejared91@yahoo.com" method="POST">
-      <input className='name' type="text" name="name" placeholder='Enter Name' required></input>
-     <input className='email' type="email" name="email" placeholder='Enter Email' required></input>
+      <input className='name' type="text" name="name" placeholder='Enter Name'  onBlur={handleChange}></input>
+     <input className='email' type="email" name="email" placeholder='Enter Email' onBlur={handleChange}></input>
      <input className='message' type="test" name="message" placeholder='Enter Message' required ></input>
      <button type="submit">Send</button>
 </form>
