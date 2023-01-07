@@ -34,14 +34,14 @@ main {
   box-sizing: border-box;
 }
 
-html,
-body,
-main {
-  overflow-x: hidden;
-  /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("./assets/images/fold.jpg");  blur img*/ 
-  background-image: url("./assets/images/fold.jpg");
+.hero {
+
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
   background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
 }
+
 
 body {
   margin: 0;
@@ -65,8 +65,7 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
+
 }
 
 h1 {
@@ -115,9 +114,13 @@ button:hover {
 }
 
 .home {
-  position: absolute;
-  top: 200px;
-  left: 200px;
+display: flex;
+flex-direction: column;
+margin: 200px 200px;
+}
+
+.home h1,h2,p, button {
+  margin: 20px;
 }
 
 input {
@@ -343,45 +346,44 @@ input {
 
 
 
-   @media screen and (max-width: 1200px) {
+   @media screen and (max-width: 1300px) {
 
     
-html,
-  body,
-  main{
-        height: 670px;
-        background-repeat: no-repeat;
-        background-position: center;
-  }
+
    }
 
 
-   @media screen and (max-width: 800px) {
+   @media screen and (min-width: 50px ) and (max-width: 800px) {
 
-    .home {
-      position: absolute;
-      top: 200px;
-      left: 90px;
+    .hero {
+      background-image: center;
     }
-    html,
-    body,
-    main {
-      overflow-x: hidden;
-       background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
-      /* background-image: url("./assets/images/fold.jpg")radial-gradient(0.5); */
-      background-size: cover;
-    }
-    .aboutMe {
+  .home {
       display: flex;
-      text-align: center;
-      width: 100%;
-      font-size: 15px;
+      flex-direction: column;
+      font-size: 10px;
+      margin: 30px;
     }
+
+    .home h1, h2, p ,button {
+      font-size: 20px;
+    }
+    .aboutInfo {
+      display: flex;
+      margin: 50px 0;
+    }
+
+    .aboutMe {
+
+      width: 100%;
+      font-size: 20px;
+    }
+ 
 
     .aboutInfo img {
 
-      height: 50px;
-      width: 50px;
+      height: 150px;
+      width: 150px;
       margin: 10px 85px;
 
      
@@ -393,36 +395,51 @@ html,
       margin: 0 110px;
     }
 
-    .resume {
+    .resumeInfo {
       font-size: 15px;
-      margin: 50px;
+      margin: 50px 0;
     }
-    .resume h1 {
+    .resumeInfo h1 {
       font-size: 20px;
     }
-    .resume h2 {
+    .resumeInfo h2 {
       font-size: 15px;
+    }
+
+    .skill {
+      margin: 0;
+    }
+
+    .contactInfo {
+      margin: 10px 0;
+    }
+    .test {
+      width: 100%;
+    }
+    .contactP {
+      width: 100%;
+    }
+    #contact-form {
+      margin: 10px 0;
+      
+    }
+    #contact-form input {
+      width: 300px;
+    }
+    #contact-form button {
+      width: 300px;
     }
        }
 
-       @media screen and (max-width: 900px) {
-
-        .home {
-          position: absolute;
-          top: 200px;
-          left: 90px;
-        }
-        html,
-        body,
-        main {
-          overflow-x: hidden;
-           background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
-          /* background-image: url("./assets/images/fold.jpg")radial-gradient(0.5); */
-          background-size: cover;
-        }
+       @media screen and (min-width: 801px) and (max-width: 1000px) {
 
         .aboutMe {
-          display: flex;
-          text-align: center;
+          width: 100%;
+          font-size: 30px;
         }
-           }
+
+        .test {
+          width: 100%;
+        }
+       }
+

@@ -10,8 +10,8 @@ import Nav from './components/Nav';
 function App() {
 
   return (
-    <div className='appDiv'>
-    <header><><Nav></Nav></></header>
+    <div className='hero'>
+    <><Nav></Nav></>
      
   
       <Routes>
