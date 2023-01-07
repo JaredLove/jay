@@ -147,24 +147,24 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
   .myImg {
-    position: absolute;
-    left: 130px;
-    top: 100px;
     border: solid;
+    height: 300px;
   }
 
  .aboutMe {
-  position: absolute;
-  width: 40%;
-  left: 600px;
-  top: 90px;
   font-size: 20px;
   background-color: rgba(11, 0, 12, 0.5);
   border: solid;
   border-radius: 20px;
   padding: 20px;
+  width: 50%;
  }
 
 
@@ -252,46 +252,78 @@ margin: 50px 0;
 
 
 
-.resume {
-  position: absolute;
-  left: 200px;
-  top: 200px;
+.resumeInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px 0;
+
+}
+
+.borderInfo {
+  border: solid;
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+}
+.borderInfo h1, h2 {
+  margin: 20px;
+}
+.skill {
+  margin: 20px 300px;
+  list-style: none;
 }
 
 
 #contact-form {
-  width: 10%;
-  position: absolute;
-  left: 700px;
-  top: 350px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+
+}
+
+input {
+  color: #fff;
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .message {
+ 
   width: 500px;
   height: 150px;
 }
-
-.contactMe {
-  position: absolute;
-  left: 820px;
-  top: 150px;
+.contactInfo {
+  display: flex;
+  
+  margin: 130px 0;
+  align-items: center;
+  flex-direction: column;
 }
 
-.touch {
-  position: absolute;
-  left: 833px;
-  top: 200px;
-  font-size: 25px;
-  color: #8c54ff;
+.contactMe {
+ display: flex;
+ align-items: center;
 }
 
 .contactP {
-    position: absolute;
-  left: 701px;
-  top: 250px;
-  font-size: 15px;
-  width: 26%;
 
+  text-align: center;
+  align-items: center;
+  border-radius: 1%;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.test {
+  margin: 10px;
+  width: 26%;
+    border: solid;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .name {
@@ -322,3 +354,75 @@ html,
         background-position: center;
   }
    }
+
+
+   @media screen and (max-width: 800px) {
+
+    .home {
+      position: absolute;
+      top: 200px;
+      left: 90px;
+    }
+    html,
+    body,
+    main {
+      overflow-x: hidden;
+       background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
+      /* background-image: url("./assets/images/fold.jpg")radial-gradient(0.5); */
+      background-size: cover;
+    }
+    .aboutMe {
+      display: flex;
+      text-align: center;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .aboutInfo img {
+
+      height: 50px;
+      width: 50px;
+      margin: 10px 85px;
+
+     
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      margin: 0 110px;
+    }
+
+    .resume {
+      font-size: 15px;
+      margin: 50px;
+    }
+    .resume h1 {
+      font-size: 20px;
+    }
+    .resume h2 {
+      font-size: 15px;
+    }
+       }
+
+       @media screen and (max-width: 900px) {
+
+        .home {
+          position: absolute;
+          top: 200px;
+          left: 90px;
+        }
+        html,
+        body,
+        main {
+          overflow-x: hidden;
+           background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
+          /* background-image: url("./assets/images/fold.jpg")radial-gradient(0.5); */
+          background-size: cover;
+        }
+
+        .aboutMe {
+          display: flex;
+          text-align: center;
+        }
+           }

@@ -2,16 +2,18 @@ import React from 'react';
 
 
 
+
 function Resume() {
 
 
 
   return (
-    <div className='resume'>
+    <div className='resumeInfo'>
 
-     <h1>Take a look at my <a href="https://docs.google.com/document/d/17J7e-47XY25hDmlJsdg8uso_YAwcqxTL8uDUWnMpqb4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
 
-     <section>
+       <div className='borderInfo'>
+        <h1>Take a look at my <a href="https://docs.google.com/document/d/17J7e-47XY25hDmlJsdg8uso_YAwcqxTL8uDUWnMpqb4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
+
           <h2>Here are some technologies I've worked with</h2>
 
 <ul className="skill">
@@ -56,7 +58,7 @@ function Resume() {
 
 
 </ul>
-          </section>
+    </div>   
     </div>
   );
 }
