@@ -36,10 +36,11 @@ main {
 
 .hero {
 
-  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
+  /* background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/fold.jpg"); 
   background-size: cover;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; */
+  background-color: #0a192f;
 }
 
 
@@ -54,6 +55,8 @@ body {
   color: var(--slate);
   font-family: 'Poiret One', cursive;
 }
+
+
 
 
 
@@ -116,7 +119,16 @@ button:hover {
 .home {
 display: flex;
 flex-direction: column;
-margin: 200px 200px;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+height: 80vh;
+}
+
+.home h1 {
+  font-size: 120px;
+  font-family: "Poppins",Sans-serif;
 }
 
 .home h1,h2,p, button {
@@ -174,7 +186,7 @@ textarea {
 .work {
 display: flex;
 flex-direction: column;
-justify-content: start;
+flex: start;
 align-items: center;
 margin: 50px 0;
 }
