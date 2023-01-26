@@ -34,55 +34,34 @@ function Home(){
 
       <div className='resumeInfo' id='resume'>
 
+<p className='resumeTitle'>My Expertise</p>
 
 <div className='borderInfo'>
+  <h1>Frontend Developer</h1>
+  <p>
+    Knowledgeable UI/UX developer. Experienced
+    in HTML, CSS, JS, and React frameworks.
+  </p>
+</div>
+<div className='borderInfo'>
+  <h1>Backend Developer</h1>
+  <p>
+    Being experienced in SQL, MongoDB, Apis, 
+    Apollo, and JavaScript.
+  </p>
+</div>
+<div className='borderInfo'>
+  <h1>Value</h1>
+  <p>
+    I Strive to provide excellence and value
+    into everything I work on.
+  </p>
+</div>
+
+  
  <h1>Take a look at my <a href="https://docs.google.com/document/d/17J7e-47XY25hDmlJsdg8uso_YAwcqxTL8uDUWnMpqb4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
 
-   <h2>Here are some technologies I've worked with</h2>
 
-<ul className="skill">
-<li>
- 
- <i className="fa-solid fa-check"></i> HTML
-</li>
-<li>
- <i className="fa-solid fa-check"></i> CSS-Bootstrap-Bulma
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Javascript
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Node.js
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Express.js
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Mysql
-</li>
-<li>
- <i className="fa-solid fa-check"></i> React
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Mongoose
-</li>
-
-<li>
- <i className="fa-solid fa-check"></i> MongoDB
-</li>
-<li>
- <i className="fa-solid fa-check"></i> SQL
-</li>
-<li>
- <i className="fa-solid fa-check"></i> Apollo
-</li>
-<li>
- <i className="fa-solid fa-check"></i> State
-</li>
-
-
-</ul>
-</div>   
 </div>
       <div className='work' id='work'>
       <h1> Some Of My Work</h1>
