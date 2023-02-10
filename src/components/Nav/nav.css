@@ -1,14 +1,67 @@
-.brand {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 25px;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: relative;
 }
 
-nav ul li {
-    margin: 0 25px;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-nav li {
+  margin: 0 20px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+}
+
+.navbar-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(19, 18, 18);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }

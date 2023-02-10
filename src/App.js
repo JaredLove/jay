@@ -1,13 +1,14 @@
 import React from 'react';
 import Home from './components/Home';
 import { Route, Routes, Navigate } from "react-router-dom";
-import Nav from './components/Nav';
+import Navbar from './components/Nav';
+// import Loading from './components/Loading';
 
 function App() {
 
   return (
     <div className='hero'>
-    <><Nav></Nav></>
+    <><Navbar></Navbar></>
      
   
       <Routes>

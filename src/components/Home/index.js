@@ -1,18 +1,65 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import coverImage from '../../assets/images/test.png';
 import timeWork from "../../assets/images/time-2-work.jpeg";
 import book from "../../assets/images/bookeeper.png";
 import watchTime from '../../assets/images/watch-time.png'
-import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub ,  faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
-import { Link } from 'react-router-dom';
-function Home(){
+
+const  Home = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isVisible, setIsVisible] = useState({
+    div1: false,
+    div2: false,
+    div3: false,
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const div1 = document.getElementById('about');
+      const div2 = document.getElementById('resume');
+      const div3 = document.getElementById('work');
+      const div4 = document.getElementById('contact');
+
+      if (div1) {
+        const boundingRect1 = div1.getBoundingClientRect();
+        if (boundingRect1.top < window.innerHeight) {
+          setIsVisible((prevState) => ({ ...prevState, div1: true }));
+        }
+      }
+
+      if (div2) {
+        const boundingRect2 = div2.getBoundingClientRect();
+        if (boundingRect2.top < window.innerHeight) {
+          setIsVisible((prevState) => ({ ...prevState, div2: true }));
+        }
+      }
+
+      if (div3) {
+        const boundingRect3 = div3.getBoundingClientRect();
+        if (boundingRect3.top < window.innerHeight) {
+          setIsVisible((prevState) => ({ ...prevState, div3: true }));
+        }
+      }
+      if (div4) {
+        const boundingRect3 = div4.getBoundingClientRect();
+        if (boundingRect3.top < window.innerHeight) {
+          setIsVisible((prevState) => ({ ...prevState, div4: true }));
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <body className='hero'>
+    <main className='hero'>
       
     <div>
     <section className='home' id='home'>
@@ -34,7 +81,7 @@ function Home(){
            
       <div> 
           <section className='links'>
-           <a href='/#contact'> <FontAwesomeIcon icon={faMailBulk} /></a>
+           <a href='#contact'> <FontAwesomeIcon icon={faMailBulk} /></a>
            <a href='https://github.com/JaredLove'> <FontAwesomeIcon icon={faGithub} /></a>
            <a href='https://www.linkedin.com/in/jared-love-188479241/'> <FontAwesomeIcon icon={faLinkedin} /></a>
           </section>  
@@ -42,13 +89,12 @@ function Home(){
     </section>
  
     </div>
-    
-
-    
-   
-    <div className='about' id='about'>
+    <div className='about' id='about'   style={{
+          opacity: isVisible.div1 ? 1 : 0,
+          transition: 'opacity 1s ease-in-out',
+        }}    >
       <section className='aboutMe'>
-      <h1 className='aboutInfo'>01. Who am I? </h1>   
+      <h1 className='aboutInfo'>( ) Who am I? </h1>   
         <p>
           
                 Hey, I'm Jared, but you can call me Jay. I started my web
@@ -70,12 +116,48 @@ function Home(){
 
         </p>
         </section>
-        <img className="myImg" src={coverImage}  alt="cover" />
+        <div
+      style={{
+        position: 'relative',
+        width: '300px',
+        height: '300px',
+        right: '350px'
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img
+        src={coverImage}
+        alt="mypic"
+        className='mypic'
+        style={{
+          width: '100%',
+          height: '100%',
+        }}
+      />
+      <div
+      className='backgroundShade'
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: `rgba(0, 0, 0, 0.5)`,
+          opacity: isHovered ? 0 : 1,
+          transition: 'opacity 0.5s ease-in-out',
+        }}
+      />
+    </div>
       </div>
+      
 
-      <div className='resumeInfo' id='resume'>
+      <div className='resumeInfo' id='resume'     style={{
+          opacity: isVisible.div2 ? 1 : 0,
+          transition: 'opacity 1s ease-in-out',
+        }}>
 
-<p className='resumeTitle'>02. My Expertise</p>
+<p className='resumeTitle'>( ) My Expertise</p>
 <ul>
   <li>
 <div className='borderInfo1'>
@@ -113,8 +195,11 @@ function Home(){
 </div>
 
 </div>
-      <div className='work' id='work'>
-      <h1> 03. Some Of My Work</h1>
+      <div className='work' id='work'     style={{
+          opacity: isVisible.div3 ? 1 : 0,
+          transition: 'opacity 1s ease-in-out',
+        }}>
+      <h1> ( ) Some Of My Work</h1>
       <div className='wt'>
         <p className='title'>WATCHTIME <br></br> <span className='span'>Front End / Back End Development</span></p>
    <section className='watchTime'>
@@ -146,7 +231,10 @@ function Home(){
     </div>
     </div>
  
-    <div id='contact'>
+    <div id='contact' style={{
+          opacity: isVisible.div4 ? 1 : 0,
+          transition: 'opacity 1s ease-in-out',
+        }}>
     <section className='contactMe'>
       <h1>( ) Contact Me</h1>
       <p>I'm always looking for new opportunities, whether you have a job for me
@@ -157,7 +245,7 @@ function Home(){
       <a href = "mailto: abc@example.com"><button>Send Email</button></a>
     </section>
 </div>
-</body>
+</main>
 
   );
 }

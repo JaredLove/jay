@@ -6,9 +6,9 @@
 }
 
 :root {
-  --primary: #19282F;
-  --secondary: #D3ECA7;
-  --tertiary: #C3DBD9;
+  --primary: #1D2D50;
+  --secondary: #0F6292;
+  --tertiary: #fafafa;
   --white: #fafafa;
   --light: #6B728E;
   --dark: #B33030;
@@ -104,13 +104,6 @@ a {
 a:hover {
   opacity: 0.8;
 }
-/* nav bar */
-
-.navbar {
-  background-color: hsl(0 100% 100% / 0.4);
-}
-
-/* nav bar */
 
 
  /* Home section css */
@@ -156,12 +149,7 @@ a:hover {
   height: 80vh;
   margin-bottom: 200px;
 }
-  .myImg {
-    height: 300px;
-    position: relative;
-    right: 350px;
 
-  }
 .aboutInfo {
   color: var(--tertiary);
   font-size: 50px;
