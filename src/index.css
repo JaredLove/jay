@@ -459,6 +459,8 @@ ul li {
       align-items: center;
     }
 
+
+
     .links {
       font-size: 60px;
     }
@@ -500,7 +502,7 @@ ul li {
     }
  
 
-    .aboutInfo img {
+    .aboutMe img {
 
       height: 150px;
       width: 150px;
@@ -512,42 +514,77 @@ ul li {
     .about {
       display: flex;
       align-items: center;
-      margin: 0 110px;
+      
+    }
+    .about p {
+      width: 35ch;
+      font-size: 17px;
+      margin: 15px 20px;
+    }    
+    
+    .resumeTitle {
+      font-size: 40px;
+    }
+    .resumeInfo {
+      height: 230vh;
+    }
+    .resumeInfo ul {
+      display: flex;
+      flex-direction: column;
     }
 
-    .resumeInfo {
-      font-size: 15px;
-      margin: 50px 0;
+    .resumeInfo ul li {
+      margin: 20px 0;
     }
+
     .resumeInfo h1 {
       font-size: 20px;
     }
     .resumeInfo h2 {
       font-size: 15px;
     }
+    .borderInfo1 {
+      width: 300px;
+    }
+
+    .resumeInfo ul h1 {
+      font-size: 20px;
+    }
+    .resumeInfo ul p {
+      font-size: 15px; 
+      position: relative;
+      left: 45px;
+    }
+    .work {
+      display: flex;
+      height: 250vh;
+    }
+
+    .workH1 {
+      font-size: 30px;
+    }
 
     .skill {
       margin: 0;
     }
 
+
     .contactInfo {
       margin: 10px 0;
     }
+    .contactMe h1 {
+      font-size: 40px;
+  }
+
+  .contactMe p {
+    font-size: 20px;
+    width: 30ch;
+}
     .test {
       width: 100%;
     }
     .contactP {
       width: 100%;
-    }
-    #contact-form {
-      margin: 10px 0;
-      
-    }
-    #contact-form input {
-      width: 300px;
-    }
-    #contact-form button {
-      width: 300px;
     }
        }
 

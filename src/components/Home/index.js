@@ -172,7 +172,7 @@ const  Home = () => {
   <div className='backEnd'>
   <h1>Backend Developer</h1>
   <p>
-    Being experienced in SQL, MongoDB, Apis, Restful Apis,
+    Being experienced in SQL, MongoDB, Apis, Restful Apis, state,
    and Apollo.
   </p>
 </div>
@@ -232,7 +232,7 @@ const  Home = () => {
     </div>
     </div>
  
-    <div id='contact' style={{
+    <div id='contact' className='contactSection' style={{
           opacity: isVisible.div4 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}>
