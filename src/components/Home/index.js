@@ -61,29 +61,26 @@ const  Home = () => {
   return (
     <main className='hero'>
       
-    <div>
+    <div className='homeSection'>
     <section className='home' id='home'>
-      <div>
-        <h2>Hi, my name is,</h2>
+      <div className='hello'>
+        <p>Hello, my name is</p>
       </div>
     <div>
-       <h1> Jared Love</h1> 
+       <h1> Jared Love.</h1> 
     </div>
     <div>
-      <h2>I design and build things for the web.</h2>
-    </div>
-    <div>
-       <h3>I'm a full stack web developer
-            that can design and build digital experiences.</h3>
+       <h2>I'm a full stack web developer
+            that can design and build <span className='design'>digital experiences.</span></h2>
     </div>
            
             
            
       <div> 
           <section className='links'>
-           <a href='#contact'> <FontAwesomeIcon icon={faMailBulk} /></a>
-           <a href='https://github.com/JaredLove'> <FontAwesomeIcon icon={faGithub} /></a>
-           <a href='https://www.linkedin.com/in/jared-love-188479241/'> <FontAwesomeIcon icon={faLinkedin} /></a>
+           <a href='#contact' > <FontAwesomeIcon icon={faMailBulk} /></a>
+           <a href='https://github.com/JaredLove' target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
+           <a href='https://www.linkedin.com/in/jared-love-188479241/' target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
           </section>  
       </div>  
     </section>
@@ -121,7 +118,7 @@ const  Home = () => {
         position: 'relative',
         width: '300px',
         height: '300px',
-        right: '350px'
+        right: '200px'
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -172,21 +169,25 @@ const  Home = () => {
 </li>
 <li>
 <div className='borderInfo1'>
+  <div className='backEnd'>
   <h1>Backend Developer</h1>
   <p>
     Being experienced in SQL, MongoDB, Apis, Restful Apis,
    and Apollo.
   </p>
 </div>
+</div>
 </li>
 <li>
 <div className='borderInfo1'>
+  <div className='value'>
   <h1>Value</h1>
   <p>
     I Strive to provide excellence and value
     into everything I work on. Need a driven and
     hardworking developer? You've come to the right place
   </p>
+  </div>
 </div>
 </li>
 </ul>
@@ -199,7 +200,7 @@ const  Home = () => {
           opacity: isVisible.div3 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}>
-      <h1> ( ) Some Of My Work</h1>
+      <h1 className='workH1'> ( ) Some Of My Work</h1>
       <div className='wt'>
         <p className='title'>WATCHTIME <br></br> <span className='span'>Front End / Back End Development</span></p>
    <section className='watchTime'>
@@ -236,7 +237,7 @@ const  Home = () => {
           transition: 'opacity 1s ease-in-out',
         }}>
     <section className='contactMe'>
-      <h1>( ) Contact Me</h1>
+      <h1> ( ) Contact Me</h1>
       <p>I'm always looking for new opportunities, whether you have a job for me
         or just want to say hello, my inbox is just a click away. I'll try my best
         to get back to you.

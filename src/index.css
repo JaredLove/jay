@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary: #1D2D50;
+  --primary: #00337C;
   --secondary: #0F6292;
   --tertiary: #fafafa;
   --white: #fafafa;
@@ -35,7 +35,7 @@
 
 .hero {
   /* Photo by <a href="https://unsplash.com/@estherrj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Esther Jiao</a> on <a href="https://unsplash.com/photos/3HqSeexXYpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  /* background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/blocks.JPG.jpg"); 
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/blocks.JPG.jpg"); 
   position: relative;
   min-height: 100%;
   width: 100%;
@@ -44,8 +44,8 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 4rem;
-  padding-bottom: 6rem; */
-  background-color: var(--primary);
+  padding-bottom: 6rem;
+  /* background-color: var(--primary); */
 }
 
 .hero2 {
@@ -96,7 +96,7 @@ button:hover {
 }
 
 a {
-  color: var(--white);
+  color: #03C988;
   text-decoration: none;
   transition: var(--transition);
 }
@@ -139,6 +139,14 @@ a:hover {
   font-size: 100px;
 }
 
+.hello {
+  color: #03C988;
+}
+
+.design {
+  color: #03C988;
+}
+
  /* Home section css */
 
 /* About me section css */
@@ -151,8 +159,8 @@ a:hover {
 }
 
 .aboutInfo {
-  color: var(--tertiary);
-  font-size: 50px;
+  color: #03C988;
+  font-size: 80px;
   margin: 10px 0 40px;
 }
 
@@ -177,6 +185,11 @@ flex: start;
 align-items: center;
 margin: 50px 0;
 height: 150vh;
+}
+
+.workH1 {
+  color: #03C988;
+  font-size: 80px;
 }
 
 .watchTime {
@@ -313,7 +326,7 @@ margin-right: 50px;
 
 .resumeTitle {
   font-size: 80px;
-  color: #fff;
+  color: #03C988;
 }
 
 ul li {
@@ -361,12 +374,23 @@ ul li {
 .frontEnd p {
   width: 25ch;
   color: var(--white);
-
+  position: relative;
+  left: 65px;
 }
 .frontEnd h1 {
   width: 25ch;
   color: var(--tertiary);
+  
+}
 
+.backEnd p {
+  position: relative;
+  left: 55px;
+}
+
+.value p {
+  position: relative;
+  left: 55px;
 }
 .skill {
   margin: 20px 300px;
@@ -388,22 +412,22 @@ ul li {
 }
 
 .contactMe h1 {
-  font-size: 60px;
+  font-size: 80px;
   margin: 0 80px 0 0;
-  color: var(--tertiary);
+  color: #03C988;
 }
 
 .contactMe p {
 
   text-align: left;
   font-size: 25px;
-  width: 35ch;
+  width: 40ch;
   margin: 30px 20px;
   color: var(--white);
 }
 
 .contactMe button {
-  background-color: var(--dark-navy);
+  background-color: #03C988
 }
 /* contact section css */
 
@@ -435,6 +459,10 @@ ul li {
       align-items: center;
     }
 
+    .links {
+      font-size: 60px;
+    }
+
     .hero {
       background-image: center;
     }
@@ -444,13 +472,25 @@ ul li {
       align-items: left;
       
     }
-
-    .home h1, h2, p ,button {
+    .homeSection{
+      height: 100vh;
+      margin-top: -50px;
+      margin-left: 40px;
+    }
+    .home p {
       font-size: 20px;
+    }
+    .home h1, h2{
+      font-size: 40px;
+    }
+
+    .home h2 {
+      font-size: 30px;
     }
     .aboutInfo {
       display: flex;
       margin: 50px 0;
+      font-size: 50px;
     }
 
     .aboutMe {
