@@ -590,12 +590,273 @@ ul li {
 
        @media screen and (min-width: 801px) and (max-width: 1000px) {
 
-        .aboutMe {
-          width: 100%;
+         .wt, .t2w, .b2g {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        } */
+    
+    
+    
+        .links {
+          font-size: 60px;
+        }
+    
+        .hero {
+          background-image: center;
+        } */
+      .home {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          
+        }
+        .homeSection {
+          margin-left: 120px;
+          width: 80ch;
+        }
+         .home p {
+          font-size: 20px;
+        }
+        .home h1, h2{
+          font-size: 40px;
+        }
+    
+        .home h2 {
           font-size: 30px;
         }
-
+        .aboutInfo {
+          display: flex;
+          margin: 50px 0;
+          font-size: 50px;
+        }
+    
+        .aboutMe {
+          margin-left: 120px;
+          width: 100%;
+        }
+     
+    
+        .aboutMe img {
+    
+          height: 150px;
+          width: 150px;
+          margin: 10px 85px;
+    
+         
+        }
+    
+        .about {
+          display: flex;
+          align-items: center;
+          
+        }
+        .about p {
+          width: 35ch;
+          font-size: 20px;
+          margin: 15px 20px;
+        }    
+        
+        .resumeTitle {
+          font-size: 40px;
+        }
+        .resumeInfo {
+          height: 230vh;
+        }
+        .resumeInfo ul {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .resumeInfo ul li {
+          margin: 20px 0;
+        }
+    
+        .resumeInfo h1 {
+          font-size: 20px;
+        }
+        .resumeInfo h2 {
+          font-size: 15px;
+        }
+        .borderInfo1 {
+          width: 300px;
+        }
+    
+        .resumeInfo ul h1 {
+          font-size: 20px;
+        }
+        .resumeInfo ul p {
+          font-size: 15px; 
+          position: relative;
+          left: 45px;
+        }
+        .work {
+          display: flex;
+          height: 250vh;
+        }
+    
+        .workH1 {
+          font-size: 30px;
+        }
+    
+        .skill {
+          margin: 0;
+        }
+    
+    
+        .contactInfo {
+          margin: 10px 0;
+        }
+        .contactMe h1 {
+          font-size: 40px;
+      }
+    
+      .contactMe p {
+        font-size: 20px;
+        width: 50ch;
+    }
         .test {
+          width: 100%;
+        }
+        .contactP {
+          width: 100%;
+        }
+       }
+
+
+       @media screen and (min-width: 1001px) and (max-width: 1500px) {
+
+        .wt, .t2w, .b2g {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    
+    
+    
+        .links {
+          font-size: 60px;
+        }
+    
+        .hero {
+          background-image: center;
+        }
+      .home {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          
+        }
+        .homeSection{
+          height: 100vh;
+          margin-top: -50px;
+          margin-left: 40px;
+        }
+        .home p {
+          font-size: 20px;
+        }
+        .home h1, h2{
+          font-size: 40px;
+        }
+    
+        .home h2 {
+          font-size: 30px;
+        }
+        .aboutInfo {
+          display: flex;
+          margin: 50px 0;
+          font-size: 50px;
+        }
+    
+        .aboutMe {
+    
+          width: 100%;
+          font-size: 20px;
+        }
+     
+    
+        .aboutMe img {
+    
+          height: 150px;
+          width: 150px;
+          margin: 10px 85px;
+    
+         
+        }
+    
+        .about {
+          display: flex;
+          align-items: center;
+          
+        }
+        .about p {
+          width: 35ch;
+          font-size: 17px;
+          margin: 15px 20px;
+        }    
+        
+        .resumeTitle {
+          font-size: 40px;
+        }
+        .resumeInfo {
+          height: 230vh;
+        }
+        .resumeInfo ul {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .resumeInfo ul li {
+          margin: 20px 0;
+        }
+    
+        .resumeInfo h1 {
+          font-size: 20px;
+        }
+        .resumeInfo h2 {
+          font-size: 15px;
+        }
+        .borderInfo1 {
+          width: 300px;
+        }
+    
+        .resumeInfo ul h1 {
+          font-size: 20px;
+        }
+        .resumeInfo ul p {
+          font-size: 15px; 
+          position: relative;
+          left: 45px;
+        }
+        .work {
+          display: flex;
+          height: 250vh;
+        }
+    
+        .workH1 {
+          font-size: 30px;
+        }
+    
+        .skill {
+          margin: 0;
+        }
+    
+    
+        .contactInfo {
+          margin: 10px 0;
+        }
+        .contactMe h1 {
+          font-size: 40px;
+      }
+    
+      .contactMe p {
+        font-size: 20px;
+        width: 30ch;
+    }
+        .test {
+          width: 100%;
+        }
+        .contactP {
           width: 100%;
         }
        }

@@ -113,7 +113,7 @@ const  Home = () => {
 
         </p>
         </section>
-        <div
+        {/* <div
       style={{
         position: 'relative',
         width: '300px',
@@ -145,7 +145,7 @@ const  Home = () => {
           transition: 'opacity 0.5s ease-in-out',
         }}
       />
-    </div>
+    </div> */}
       </div>
       
 
