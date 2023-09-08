@@ -4,6 +4,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Header from './components/Header';
 import Loading from './components/Loading';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
   const App = () => {
     const [loading, setLoading] = useState(true);
 
@@ -36,7 +37,6 @@ import Footer from './components/Footer';
       <Route path="*" element={<Navigate to="/" replace />} /> 
       </Routes></header>
     }
-
     <Footer/>
     </div>
     

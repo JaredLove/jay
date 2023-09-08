@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import Work from '../components/Work';
 import Resume from '../components/Expertise';
 import About from '../components/About';
+import Contact from '../components/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub ,  faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { faMailBulk} from '@fortawesome/free-solid-svg-icons';
@@ -169,6 +170,7 @@ const  Home = () => {
           opacity: isVisible.div4 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}>
+           <Contact/>
 </div>
 </main>
 

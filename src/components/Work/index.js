@@ -2,9 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub ,  faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faFolder, faExternalLinkSquare} from '@fortawesome/free-solid-svg-icons';
-import code from '../../assets/images/code.jpg';
 
 function Work() {
   const [selectedButton, setSelectedButton] = useState(null);
@@ -55,12 +54,14 @@ function Work() {
               </div>
             </div>
             <div className="workContent">
-              <h3 className="projectTitle">Watch Time</h3>
-              <p className="projectDescription">A website that allows users to search for movies and TV shows and save them to their watchlist.</p>
+              <h3 className="projectTitle">Shop-Shop</h3>
+              <p className="projectDescription">An e-commerce website that allows users to search for products and add them to their cart.</p>
+
           </div>
+
           <div className="workBottom">
        
-              <p>React Node.js MongoDB</p>
+              <p>React Redux MongoDB</p>
     
           </div>
           </div>
@@ -75,12 +76,12 @@ function Work() {
               </div>
             </div>
             <div className="workContent">
-              <h3 className="projectTitle">Watch Time</h3>
-              <p className="projectDescription">A website that allows users to search for movies and TV shows and save them to their watchlist.</p>
+              <h3 className="projectTitle">Weather Dashboard</h3>
+              <p className="projectDescription">A website that allows users to search for the current weather and 5 day forecast of a city.</p>
           </div>
           <div className="workBottom">
        
-              <p>React Node.js MongoDB</p>
+              <p>HTML CSS JavaScript</p>
     
           </div>
           </div>
@@ -95,12 +96,12 @@ function Work() {
               </div>
             </div>
             <div className="workContent">
-              <h3 className="projectTitle">Watch Time</h3>
-              <p className="projectDescription">A website that allows users to search for movies and TV shows and save them to their watchlist.</p>
+              <h3 className="projectTitle">Tech Blog</h3>
+              <p className="projectDescription">A website that allows users to create an account and post blogs about the latest tech news.</p>
           </div>
           <div className="workBottom">
        
-              <p>React Node.js MongoDB</p>
+              <p>Node.js Express Handlebars SQL</p>
     
           </div>
           </div>
@@ -115,12 +116,13 @@ function Work() {
               </div>
             </div>
             <div className="workContent">
-              <h3 className="projectTitle">Watch Time</h3>
-              <p className="projectDescription">A website that allows users to search for movies and TV shows and save them to their watchlist.</p>
+              <h3 className="projectTitle">Deep Thoughts</h3>
+              <p className="projectDescription">A website that allows users to create an account, post thoughts and react to other users thoughts.</p>
           </div>
+
           <div className="workBottom">
        
-              <p>React Node.js MongoDB</p>
+              <p>React Node.js Express MongoDB</p>
     
           </div>
           </div>
@@ -135,15 +137,17 @@ function Work() {
               </div>
             </div>
             <div className="workContent">
-              <h3 className="projectTitle">Watch Time</h3>
-              <p className="projectDescription">A website that allows users to search for movies and TV shows and save them to their watchlist.</p>
+              <h3 className="projectTitle">Password Generator</h3>
+              <p className="projectDescription">A website that allows users to generate a random password based on their criteria.</p>
           </div>
           <div className="workBottom">
        
-              <p>React Node.js MongoDB</p>
+              <p>HTML CSS JavaScript</p>
     
           </div>
+
           </div>
+
         </div>
       );
     } else if (selectedButton === 'emailTemplates') {
