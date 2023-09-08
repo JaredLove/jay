@@ -3,11 +3,12 @@ import { FaBars } from "react-icons/fa";
 
 import './nav.css'
 
-const Navbar = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
   return (
+    <header className="header">
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-brand">
@@ -21,28 +22,29 @@ const Navbar = () => {
         >
           <li className="nav-item">
             <a href="#about" className="nav-link" onClick={close}>
-              ( ) About
+            <span className='navSign'>//</span> About
             </a>
           </li>
           <li className="nav-item">
             <a href="#resume" className="nav-link" onClick={close}>
-              ( ) Expertise
+            <span className='navSign'>//</span> Expertise
             </a>
           </li>
           <li className="nav-item">
             <a href="#work" className="nav-link" onClick={close}>
-             ( ) Work
+            <span className='navSign'>//</span> Work
             </a>
           </li>
           <li className="nav-item">
             <a href="#contact" className="nav-link" onClick={close}>
-             ( ) Contact
+            <span className='navSign'>//</span> Contact
             </a>
           </li>
         </ul>
       </div>
     </nav>
+    </header>
   );
 };
 
-export default Navbar
+export default Header;

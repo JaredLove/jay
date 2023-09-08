@@ -1,25 +1,20 @@
-import React, { useState, useEffect } from "react";
-
+import React from 'react';
+import './loading.scss';
 const Loading = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
-
   return (
-    <div>
-      {loading ? (
-        <div>
-          <p>Loading...</p>
-        </div>
-      ) : (
-        <div>
-          <p>Content Loaded</p>
-        </div>
-      )}
-    </div>
-  );
+    <div className='hero3'>
+  <div class="loader">
+  <div class="square" ></div>
+  <div class="square"></div>
+  <div class="square last"></div>
+  <div class="square clear"></div>
+  <div class="square"></div>
+  <div class="square last"></div>
+  <div class="square clear"></div>
+  <div class="square "></div>
+  <div class="square last"></div>
+</div>
+</div>    );
 };
 
 export default Loading;

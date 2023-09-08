@@ -6,36 +6,28 @@
 }
 
 :root {
-  --primary: #00337C;
-  --secondary: #0F6292;
-  --tertiary: #fafafa;
-  --white: #fafafa;
-  --light: #6B728E;
-  --dark: #B33030;
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
-  --dark-navy: #020c1b;
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2,12,27,0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100,255,218,0.1);
-  --pink: #f57dff;
-  --blue: #57cbff;
+  --primary: #000000;
+  --secondary: #C0C0C0;
+  --teal: #37B6BD;
+  --text: #ffffff;
+  --textp: #EEEEEE;
+  --white: #FFF;
+  --coa: #DAA520;
+  --link: #00ADB5;
+  --black: #000;
+  --light-black: #1f1e1e;
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --mint: #6AC9A8;
+  --peach: #FFD2B2;
+  --light-gray: #F5F5F5;
+  --CrispWhite: #FFFFFF;
 }
 
 
 
 .hero {
   /* Photo by <a href="https://unsplash.com/@estherrj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Esther Jiao</a> on <a href="https://unsplash.com/photos/3HqSeexXYpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/blocks.JPG.jpg"); 
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),  url("https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"); 
   position: relative;
   min-height: 100%;
   width: 100%;
@@ -45,7 +37,9 @@
   background-repeat: no-repeat;
   padding-top: 4rem;
   padding-bottom: 6rem;
-  /* background-color: var(--primary); */
+   background-color: black;
+   /* background-color: var(--primary); */
+
 }
 
 .hero2 {
@@ -54,6 +48,22 @@
   background-image: linear-gradient(356deg,#00000012 30%,#1a191d 100%);
   opacity: 1;
   transition: background .3s,border-radius .3s,opacity .3s;
+
+}
+
+.hero3 {
+  /* Photo by <a href="https://unsplash.com/@estherrj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Esther Jiao</a> on <a href="https://unsplash.com/photos/3HqSeexXYpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url("./assets/images/blocks.JPG.jpg"); 
+  position: relative;
+  min-height: 100vh;
+  width: 205vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+   background-color: black;
 
 }
 
@@ -96,359 +106,153 @@ button:hover {
 }
 
 a {
-  color: #03C988;
+  
   text-decoration: none;
   transition: var(--transition);
+  color: var(--teal);
 }
 
 a:hover {
   opacity: 0.8;
+  color: var(--secondary);
 }
 
 
  /* Home section css */
-.home {
+ .homeSection {
   display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
   height: 100vh;
-  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
+.avatar {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.avatarBorder {
+  margin-left: 100px;
+  border-radius: 55%;
+  height: 400px;
+}
+.css {
+  width: 30ch;
+  justify-content: right;
+  align-items: right;
+  color: #FFF;
 }
 
+.borderTech {
+
+  margin-top: 100px;
+  color: var(--text);
+  font-size: 20px;
+
+ 
+}
+.borderTech ol h3 {
+  font-size: 50px;
+  color: var(--text);
+}
+.borderTech  ol {
+  display: flex;
+  flex-direction: row;
+
+}
+.borderTech  ol li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 50px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.lightBlue {
+  color: rgb(77, 186, 230);
+}
+
+.white {
+  color: white;
+}
+
+.white1 {
+  color: #FFF;
+  font-size: 50px;
+  position: relative;
+  bottom: 20px;
+  right: 100px;
+}
+
+.white2 {
+  color: #FFF;
+  font-size: 50px;
+  position: relative;
+  left: 690px;
+}
+.orange {
+  color: rgb(252, 87, 11);
+}
+
+.yellow {
+  color: rgb(236, 252, 11);
+}
+
+.gray {
+  color: gray;
+}
+.code {
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+}
 .home h1 {
-  font-size: 80px;
-  color: var(--white);
+  font-size: 100px;
+  color: var(--text);
 }
 .home h2 {
-  font-size: 50px;
-  color: var(--tertiary);
+  font-size: 80px;
+  color: var(--textp);
  
 }
 .home h3 {
-  font-size: 20px;
-  color: var(--tertiary);
+  font-size: 60px;
+  color: var(--white);
 }
+
+.letterHover:hover{
+  color: var(--secondary);
+  animation: bounce 0.5s infinite;
+}
+
+
 
 .links {
 
   font-size: 100px;
 }
 
-.hello {
-  color: #03C988;
+.icons {
+  font-size: 100px;
 }
 
 .design {
-  color: #03C988;
+  color: var(--secondary);
 }
 
- /* Home section css */
+ /* Home section css end */
 
-/* About me section css */
-.about {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80vh;
-  margin-bottom: 200px;
-}
 
-.aboutInfo {
-  color: #03C988;
-  font-size: 80px;
-  margin: 10px 0 40px;
-}
 
-.aboutMe p {
-  color: var(--white);
-  width: 60ch;
-  font-size: 20px;
-  margin: 0 0 15px;
-}
-
-
-
-/* About me section css */
-
-
-/* work section css */
-
-.work {
-display: flex;
-flex-direction: column;
-flex: start;
-align-items: center;
-margin: 50px 0;
-height: 150vh;
-}
-
-.workH1 {
-  color: #03C988;
-  font-size: 80px;
-}
-
-.watchTime {
-
-  position: relative;
-  overflow: hidden;
-  padding: 20px 0;
-}
-
-.title {
-  color: #fff;
-  font-size: 35px;
-margin-top: 90px;
-margin-right: 50px;
-}
-
-.title2 {
-  color: #fff;
-  font-size: 35px;
-  margin-top: 90px;
-  margin-left: 50px;
-  }
-
-
-
-  .title3 {
-    color: #fff;
-    font-size: 35px;
-    margin-top: 90px;
-    margin-right: 50px;
-  }
-
-  .span {
-    font-size: 15px;
-
-  }
-
-
-.watchTime img {
-  transition: transform .5s ease;
-}
-
-.overlay, .overlay2, .overlay3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.watchTime:hover .overlay {
-  opacity: 1;
-}
-.time2Work:hover .overlay2{
-  opacity: 1;
-}
-.bookeeper2Go:hover .overlay3{
-  opacity: 1;
-}
-
-
-.text1 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  text-decoration: none;
-}
-.text2 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  text-decoration: none;
-}
-
-.t2w {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.b2g {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-.wt {
-
-    display: flex;
-    flex-direction: row;
-
-}
-
-.time2Work {
-  position: relative;
-  padding: 20px 0;
-  overflow: hidden;
-}
-
-.bookeeper2Go {
-  position: relative;
-  overflow: hidden;
-  padding: 20px 0;
-
-}
-/* work section css */
-
-/* Expertise Resume CSS */
-
-.resumeInfo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-
-}
-
-.resumeTitle {
-  font-size: 80px;
-  color: #03C988;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-.resumeInfo ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  color: #fff;
-  padding: 20px;
-  margin: 0 100px;
-
-}
-
-.resumeInfo ul h1 {
-  text-align: center;
-  padding: 10px;
-  font-size: 25px;
-  text-decoration: underline;
-}
-
-.resumeInfo ul p {
-  text-align: left;
-  padding: 30px;
-  font-size: 20px;
-  max-width: 30ch;
-
-}
-
-.resumeInfo ul li {
-  margin: 0 5px;
-}
-
-.borderInfo1 {
-  border: solid;
-  border-radius: .1%;
-  width: 400px;
-  height: 350px;
-  border-color: #fff;
-}
-
-.frontEnd p {
-  width: 25ch;
-  color: var(--white);
-  position: relative;
-  left: 65px;
-}
-.frontEnd h1 {
-  width: 25ch;
-  color: var(--tertiary);
-  
-}
-
-.backEnd p {
-  position: relative;
-  left: 55px;
-}
-
-.value p {
-  position: relative;
-  left: 55px;
-}
-.skill {
-  margin: 20px 300px;
-  list-style: none;
-}
-
-.resumeLink {
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-}
-
-/* contact section css */
-
-.contactMe {
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-.contactMe h1 {
-  font-size: 80px;
-  margin: 0 80px 0 0;
-  color: #03C988;
-}
-
-.contactMe p {
-
-  text-align: left;
-  font-size: 25px;
-  width: 40ch;
-  margin: 30px 20px;
-  color: var(--white);
-}
-
-.contactMe button {
-  background-color: #03C988
-}
-/* contact section css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   @media screen and (max-width: 1300px) {
-
-    
-
-   }
 
 
    @media screen and (min-width: 50px ) and (max-width: 800px) {
@@ -496,7 +300,9 @@ ul li {
     }
 
     .aboutMe {
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       font-size: 20px;
     }
@@ -555,6 +361,11 @@ ul li {
       position: relative;
       left: 45px;
     }
+
+    .wtImg {
+      width: 300px;
+      height: 200px;
+    }
     .work {
       display: flex;
       height: 250vh;
@@ -573,11 +384,12 @@ ul li {
       margin: 10px 0;
     }
     .contactMe h1 {
+      margin: 0;
       font-size: 40px;
   }
 
   .contactMe p {
-    font-size: 20px;
+    font-size: 18px;
     width: 30ch;
 }
     .test {
@@ -590,11 +402,11 @@ ul li {
 
        @media screen and (min-width: 801px) and (max-width: 1000px) {
 
-         .wt, .t2w, .b2g {
+        .wt, .t2w, .b2g {
           display: flex;
           flex-direction: column;
           align-items: center;
-        } */
+        }
     
     
     
@@ -604,18 +416,19 @@ ul li {
     
         .hero {
           background-image: center;
-        } */
+        }
       .home {
           display: flex;
           flex-direction: column;
           align-items: left;
           
         }
-        .homeSection {
-          margin-left: 120px;
-          width: 80ch;
+        .homeSection{
+          height: 100vh;
+          margin-top: -50px;
+          margin-left: 40px;
         }
-         .home p {
+        .home p {
           font-size: 20px;
         }
         .home h1, h2{
@@ -632,8 +445,13 @@ ul li {
         }
     
         .aboutMe {
-          margin-left: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           width: 100%;
+          font-size: 20px;
+
         }
      
     
@@ -648,13 +466,14 @@ ul li {
     
         .about {
           display: flex;
-          align-items: center;
-          
+        
+          justify-content: center;
+          text-align: left;
+
         }
         .about p {
           width: 35ch;
           font-size: 20px;
-          margin: 15px 20px;
         }    
         
         .resumeTitle {

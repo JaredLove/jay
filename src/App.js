@@ -1,23 +1,46 @@
-import React from 'react';
-import Home from './components/Home';
+import React, { useState, useEffect } from 'react';
+import Home from './pages/Home.js';
 import { Route, Routes, Navigate } from "react-router-dom";
-import Navbar from './components/Nav';
-// import Loading from './components/Loading';
+import Header from './components/Header';
+import Loading from './components/Loading';
+import Footer from './components/Footer';
+  const App = () => {
+    const [loading, setLoading] = useState(true);
 
-function App() {
-
+    useEffect(() => {
+      // Simulate an asynchronous operation, such as fetching data
+      
+      setTimeout(() => {
+        setLoading(false);
+      }, 100);
+    }, []);
   return (
+   
+     
     <div className='hero'>
-    <><Navbar></Navbar></>
+
+      {
+         loading ?
+
+         <Loading />
+
+         :
+      
+     <header>
+    <><Header/></>
      
   
       <Routes>
   
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" replace />} /> 
-      </Routes>
-    
+      </Routes></header>
+    }
+
+    <Footer/>
     </div>
+    
+
   );
 }
 
