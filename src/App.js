@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Home from './pages/Home.js';
 import { Route, Routes, Navigate } from "react-router-dom";
 import Header from './components/Header';
-import Loading from './components/Loading';
+// import Loading from './components/Loading';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
   const App = () => {
@@ -20,13 +20,13 @@ import Contact from './components/Contact';
      
     <div className='hero'>
 
-      {
+      {/* {
          loading ?
 
          <Loading />
 
          :
-      
+       */}
      <header>
     <><Header/></>
      
@@ -36,7 +36,7 @@ import Contact from './components/Contact';
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" replace />} /> 
       </Routes></header>
-    }
+    {/* } */}
     <Footer/>
     </div>
     
